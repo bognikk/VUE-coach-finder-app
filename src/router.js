@@ -10,12 +10,14 @@ import NotFound from './pages/NotFound.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', redirecr: '/coaches' },
+    { path: '/', redirect: '/coaches' },
     { path: '/coaches', component: CoachesList },
     {
       path: '/coaches/:id',
       component: CoachDetail,
-      children: [{ path: './contact', component: ContactCoach }], // /coaches/c1/contact
+      children: [
+        { path: 'contact', component: ContactCoach }, // /coaches/c1/contact
+      ],
     },
     { path: '/register', component: CoachRegistration },
     { path: '/requests', component: RequestsReceived },

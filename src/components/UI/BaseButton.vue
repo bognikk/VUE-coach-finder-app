@@ -46,10 +46,17 @@ a {
 	cursor: pointer;
 
 	&:hover,
-	&:active {
+	&:active,
+	&:focus {
 		color: #35495e;
 		border-color: #42b883;
 		background-color: #42b883;
+		outline-color: #42b883;
+	}
+
+	&:focus {
+		outline: 2px solid webkit-focus-ring-color;
+		outline-offset: -2px;
 	}
 
 	&.flat {

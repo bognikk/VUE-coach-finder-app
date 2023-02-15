@@ -40,6 +40,7 @@ header {
 				&.router-link-active {
 					outline: transparent;
 					text-decoration: underline;
+					color: #35495e;
 				}
 			}
 		}

@@ -1,3 +1,5 @@
 <template>
-	<h2></h2>
+	DETAILS FOR COACH
+	<router-view></router-view>
+	<router-link to="/coaches/c1/contact">Contact</router-link>
 </template>

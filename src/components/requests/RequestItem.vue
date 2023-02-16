@@ -1,10 +1,12 @@
 <template>
-	<li>
-		<div>
-			<a :href="emailLink">{{ email }}</a>
-		</div>
-		<p>{{ message }}</p>
-	</li>
+	<base-card>
+		<li>
+			<div>
+				<a :href="emailLink">{{ email }}</a>
+			</div>
+			<p>{{ message }}</p>
+		</li>
+	</base-card>
 </template>
 
 <script>
@@ -18,22 +20,17 @@ export default {
 };
 </script>
 
-<style scoped>
-li {
-	margin: 1rem 0;
-	border: 1px solid #ccc;
-	padding: 1rem;
-}
-
+<style lang="scss" scoped>
 a {
-	color: #3d008d;
+	color: #35495e;
 	text-decoration: none;
 	font-weight: bold;
-}
 
-a:hover,
-a:active {
-	color: #8d007a;
+	&:hover,
+	&:active {
+		color: #42b883;
+		text-decoration: underline;
+	}
 }
 
 p {

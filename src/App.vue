@@ -26,4 +26,8 @@ html {
 body {
 	margin: 0;
 }
+
+::-webkit-scrollbar {
+	display: none;
+}
 </style>

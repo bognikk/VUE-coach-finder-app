@@ -11,7 +11,7 @@
 				<h2>Interested? Reach out now!</h2>
 				<base-button link :to="contactLink">Contact</base-button>
 			</header>
-			<!-- <router-view></router-view> -->
+			<router-view></router-view>
 		</base-card>
 	</section>
 	<section>
@@ -53,7 +53,7 @@ export default {
 		},
 	},
 	created() {
-		this.selectedCoach = this.$store.getters['coaches/coachesGetter'].find(
+		this.selectedCoach = this.$store.getters['coaches/coaches'].find(
 			(coach) => coach.id === this.id
 		);
 	},

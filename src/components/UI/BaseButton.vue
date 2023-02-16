@@ -50,7 +50,7 @@ a {
 		color: #35495e;
 		border-color: #42b883;
 		background-color: #42b883;
-		outline-color: #42b883;
+		outline-color: #35495e;
 	}
 
 	&:focus {

@@ -165,23 +165,16 @@ export default {
 		font-weight: bold;
 	}
 
-	// input[type='checkbox'] + label {
-	// 	margin: 0 0 0 0.5rem;
-	// 	display: inline;
-	// 	font-weight: normal;
-	// }
-
 	input,
 	textarea {
 		display: block;
-		width: 100%;
 		max-width: 100%;
+		width: 100%;
 		border: 1px solid #ccc;
 		font: inherit;
 
 		&:focus {
 			border-color: #42b883;
-			outline: none;
 			background-color: #e3fff2;
 		}
 	}
@@ -193,13 +186,12 @@ export default {
 
 		&:focus {
 			border-color: #42b883;
-			outline: none;
 			background-color: #e3fff2;
 		}
 
 		& + label {
-			margin: 0 0 0 0.5rem;
 			display: inline;
+			margin: 0 0 0 0.5rem;
 			font-weight: normal;
 		}
 	}
@@ -211,12 +203,12 @@ export default {
 
 	&.invalid {
 		label {
-			color: red;
+			color: #dd0426;
 		}
 
 		input,
 		textarea {
-			border: 1px solid red;
+			border: 1px solid #dd0426;
 		}
 	}
 }

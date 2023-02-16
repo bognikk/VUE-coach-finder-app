@@ -44,7 +44,6 @@ header {
 				&:hover,
 				&:active,
 				&.router-link-active {
-					outline: transparent;
 					text-decoration: underline;
 					color: #35495e;
 				}

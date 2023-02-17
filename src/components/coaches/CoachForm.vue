@@ -1,7 +1,7 @@
 <template>
 	<form @submit.prevent="submitForm">
 		<div class="form-control" :class="{ invalid: !firstName.isValid }">
-			<label for="firstname">Firstname</label>
+			<label for="firstname">First name</label>
 			<input
 				type="text"
 				id="firstname"
@@ -11,12 +11,12 @@
 			<p v-if="!firstName.isValid">First name must not be empty.</p>
 		</div>
 		<div class="form-control" :class="{ invalid: !lastName.isValid }">
-			<label for="lastname">Lastname</label>
+			<label for="lastname">Last name</label>
 			<input
 				type="text"
 				id="lastname"
 				v-model.trim="lastName.val"
-				@blur="clearValidity('lasrName')"
+				@blur="clearValidity('lastName')"
 			/>
 			<p v-if="!lastName.isValid">Last name must not be empty.</p>
 		</div>

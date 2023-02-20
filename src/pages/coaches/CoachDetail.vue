@@ -10,7 +10,7 @@
 			<base-card>
 				<header>
 					<h2>Interested? Reach out now!</h2>
-					<base-button link :to="contactLink">Contact</base-button>
+					<!-- <base-button link :to="contactLink">Contact</base-button> -->
 				</header>
 				<base-card>
 					<router-view></router-view>

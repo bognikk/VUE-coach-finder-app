@@ -12,10 +12,10 @@
 				></base-badge>
 			</div>
 			<div class="actions">
-				<base-button mode="outline" link :to="coachContactLink"
+				<!-- <base-button mode="outline" link :to="coachContactLink"
 					>Contact</base-button
-				>
-				<base-button link :to="coachDetailsLink">View Details</base-button>
+				> -->
+				<base-button link :to="coachContactLink">View Details</base-button>
 			</div>
 		</li>
 	</base-card>
@@ -31,9 +31,9 @@ export default {
 		coachContactLink() {
 			return this.$route.path + '/' + this.id + '/contact'; // /coaches/c1/contact
 		},
-		coachDetailsLink() {
-			return this.$route.path + '/' + this.id; // /coaches/c1
-		},
+		// coachDetailsLink() {
+		// 	return this.$route.path + '/' + this.id; // /coaches/c1
+		// },
 	},
 };
 </script>

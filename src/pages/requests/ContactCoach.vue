@@ -49,28 +49,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/mixins.scss';
+
 .form-control {
-	margin: 0.5rem 0;
-
-	label {
-		font-weight: bold;
-		margin-bottom: 0.5rem;
-		display: block;
-	}
-
-	input,
-	textarea {
-		display: block;
-		width: 100%;
-		font: inherit;
-		border: 1px solid #ccc;
-		padding: 0.15rem;
-
-		&:focus {
-			border-color: #42b883;
-			background-color: #e3fff2;
-		}
-	}
+	@include form-control;
 }
 
 .errors {

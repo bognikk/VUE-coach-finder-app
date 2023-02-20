@@ -1,0 +1,45 @@
+@mixin form-control {
+  margin: 0.5rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+
+    &:focus {
+      border-color: #42b883;
+      background-color: #e3fff2;
+    }
+  }
+
+  input[type='checkbox'] {
+    display: inline;
+    width: auto;
+    border: none;
+
+    &:focus {
+      border-color: #42b883;
+      background-color: #e3fff2;
+    }
+
+    & + label {
+      display: inline;
+      margin: 0 0 0 0.5rem;
+      font-weight: normal;
+    }
+  }
+
+  h3 {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+}

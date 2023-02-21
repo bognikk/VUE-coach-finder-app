@@ -40,8 +40,8 @@ export default {
       throw error;
     }
 
-    // const expiresIn = +responseData.expiresIn * 1000; // + converts it to a number
-    const expiresIn = 5000;
+    const expiresIn = +responseData.expiresIn * 1000; // + converts it to a number
+    // const expiresIn = 5000;
     const expirationDate = new Date().getTime() + expiresIn;
 
     localStorage.setItem('token', responseData.idToken);

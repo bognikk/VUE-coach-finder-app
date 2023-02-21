@@ -15,9 +15,9 @@ export default {
 	computed: {
 		emailLink() {
 			return 'mailto:' + this.email;
-		},
-	},
-};
+		}
+	}
+}
 </script>
 
 <style lang="scss" scoped>

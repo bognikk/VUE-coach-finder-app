@@ -19,6 +19,10 @@
       border-color: #42b883;
       background-color: #e3fff2;
     }
+
+    &:focus-visible {
+      outline-color: #42b883 !important;
+    }
   }
 
   input[type='checkbox'] {
@@ -29,6 +33,10 @@
     &:focus {
       border-color: #42b883;
       background-color: #e3fff2;
+    }
+
+    &:focus-visible {
+      outline-color: #42b883 !important;
     }
 
     & + label {

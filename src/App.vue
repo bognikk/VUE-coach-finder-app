@@ -13,6 +13,9 @@ export default {
 	components: {
 		TheHeader,
 	},
+	created() {
+		this.$store.dispatch('tryLogin');
+	}
 };
 </script>
 
@@ -35,6 +38,7 @@ body {
 	opacity: 0;
 	transform: translateY(-30px);
 }
+
 .route-leave-to {
 	opacity: 0;
 	transform: translateY(30px);
@@ -43,6 +47,7 @@ body {
 .route-enter-active {
 	transition: all 0.3s ease-out;
 }
+
 .route-leave-active {
 	transition: all 0.3s ease-in;
 }

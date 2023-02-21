@@ -15,7 +15,7 @@
 					<router-link to="/auth">Login</router-link>
 				</li>
 				<li v-if="isLoggedIn">
-					<base-button mode="outline" @click="logout">Logout</base-button>
+					<base-button @click="logout">Logout</base-button>
 				</li>
 			</ul>
 		</nav>

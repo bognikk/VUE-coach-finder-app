@@ -1,4 +1,5 @@
 <template>
+	<welcome-dialog></welcome-dialog>
 	<the-header></the-header>
 	<router-view v-slot="slotProps">
 		<transition name="route" mode="out-in">
@@ -9,10 +10,12 @@
 
 <script>
 import TheHeader from './components/layout/TheHeader.vue';
+import WelcomeDialog from './components/UI/WelcomeDilog.vue'
 
 export default {
 	components: {
-		TheHeader
+		TheHeader,
+		WelcomeDialog
 	},
 	computed: {
 		didAutoLogout() {

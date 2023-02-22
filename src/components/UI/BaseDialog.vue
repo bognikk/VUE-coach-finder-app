@@ -66,9 +66,9 @@ export default {
 dialog {
 	position: fixed;
 	top: 20vh;
-	left: 10%;
+	left: 0%;
 	z-index: 100;
-	width: 80%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	border: none;
@@ -76,6 +76,11 @@ dialog {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 	overflow: hidden;
 	background-color: #fff;
+
+	@media (min-width: $screen-xs) {
+		left: 10%;
+		width: 80%;
+	}
 
 	header {
 		width: 100%;

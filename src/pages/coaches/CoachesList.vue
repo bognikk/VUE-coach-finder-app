@@ -111,14 +111,14 @@ ul {
 	justify-content: space-between;
 	flex-wrap: wrap;
 
-	@media (min-width: $screen-xs) {
+	@media (min-width: 397px) {
 		flex-wrap: nowrap;
 	}
 
 	>button {
 		margin-bottom: 10px;
 
-		@media (min-width: 335px) {
+		@media (min-width: 397px) {
 			margin: 0;
 		}
 	}

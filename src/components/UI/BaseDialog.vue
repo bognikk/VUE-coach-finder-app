@@ -64,22 +64,27 @@ export default {
 }
 
 dialog {
-	position: fixed;
-	top: 20vh;
-	left: 0%;
+	position: absolute;
+	left: 0;
+	top: 0;
 	z-index: 100;
 	width: 100%;
 	padding: 0;
-	margin: 0;
+	margin: auto;
 	border: none;
 	border-radius: 12px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-	overflow: hidden;
 	background-color: #fff;
+	overflow: auto;
 
 	@media (min-width: $screen-xs) {
-		left: 10%;
-		width: 80%;
+		top: 3vh;
+	}
+
+	@media (min-width: $screen-sm) {
+		top: 9.6vh;
+		left: 0%;
+		overflow: hidden;
 	}
 
 	header {
@@ -127,7 +132,7 @@ dialog {
 
 @media (min-width: 768px) {
 	dialog {
-		left: calc(50% - 20rem);
+		// left: calc(50% - 20rem);
 		width: 40rem;
 	}
 }

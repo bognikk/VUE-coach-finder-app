@@ -44,6 +44,10 @@ li {
 		margin: 0.5rem 0;
 	}
 
+	div:first-of-type {
+		overflow: hidden;
+	}
+
 	div {
 		margin: 0.5rem 0;
 

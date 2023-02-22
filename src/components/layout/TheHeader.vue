@@ -59,7 +59,7 @@ header {
 		@media (min-width: $screen-sm) {
 			justify-content: space-between;
 			flex-wrap: nowrap;
-			max-width: 40rem;
+			max-width: 42rem;
 			width: 90%;
 			margin: auto;
 		}
@@ -101,6 +101,7 @@ header {
 			}
 
 			li {
+				box-sizing: border-box;
 				margin: 0 0.5rem;
 				width: 100%;
 				text-align: center;

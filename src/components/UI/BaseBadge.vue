@@ -16,24 +16,31 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 .badge {
 	display: inline-block;
+	width: 100%;
 	padding: 0.5rem 1.5rem;
 	margin: 0.5rem 0.5rem 0.5rem 0;
 	color: #000;
 	font-weight: 700;
 	background-color: #ccc;
 
+	@media (min-width: $screen-xs) {
+		width: auto;
+	}
+
 	&.frontend {
-		background-color: #79a9d1;
+		background-color: $badge-frontend;
 	}
 
 	&.backend {
-		background-color: #f07167;
+		background-color: $badge-backend;
 	}
 
 	&.career {
-		background-color: #fec601;
+		background-color: $badge-career;
 	}
 }
 </style>

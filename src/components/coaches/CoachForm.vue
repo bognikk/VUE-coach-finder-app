@@ -119,18 +119,19 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
 
 .form-control {
 	@include form-control;
 
 	&.invalid {
 		label {
-			color: #dd0426;
+			color: $alert-red;
 		}
 
 		input,
 		textarea {
-			border: 1px solid #dd0426;
+			border: 1px solid $alert-red;
 		}
 	}
 }

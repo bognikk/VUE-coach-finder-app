@@ -44,12 +44,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 h2 {
 	margin: 0.5rem 0;
 }
 
 .filter-option {
+	display: block;
 	margin-right: 1rem;
+
+	@media (min-width: $screen-xs) {
+		display: inline-block;
+	}
 
 	label,
 	input {

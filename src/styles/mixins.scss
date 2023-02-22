@@ -1,3 +1,5 @@
+@import 'settings.scss';
+
 @mixin form-control {
   margin: 0.5rem;
 
@@ -16,12 +18,12 @@
     font: inherit;
 
     &:focus {
-      border-color: #42b883;
-      background-color: #e3fff2;
+      border-color: $brand-one;
+      background-color: $brand-one-light;
     }
 
     &:focus-visible {
-      outline-color: #42b883 !important;
+      outline-color: $brand-one !important;
     }
   }
 
@@ -31,12 +33,12 @@
     border: none;
 
     &:focus {
-      border-color: #42b883;
-      background-color: #e3fff2;
+      border-color: $brand-one;
+      background-color: $brand-one-light;
     }
 
     &:focus-visible {
-      outline-color: #42b883 !important;
+      outline-color: $brand-one !important;
     }
 
     & + label {

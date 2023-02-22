@@ -51,6 +51,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -79,7 +81,7 @@ dialog {
 		width: 100%;
 		padding: 1rem;
 		color: #fff;
-		background-color: #42b883;
+		background-color: $brand-one;
 
 		h2 {
 			margin: 0;
@@ -107,6 +109,7 @@ dialog {
 .dialog-enter-active {
 	transition: all 0.3s ease-out;
 }
+
 .dialog-leave-active {
 	transition: all 0.3s ease-in;
 }

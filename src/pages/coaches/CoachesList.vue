@@ -98,6 +98,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -107,5 +109,18 @@ ul {
 .controls {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@media (min-width: $screen-xs) {
+		flex-wrap: nowrap;
+	}
+
+	>button {
+		margin-bottom: 10px;
+
+		@media (min-width: 335px) {
+			margin: 0;
+		}
+	}
 }
 </style>

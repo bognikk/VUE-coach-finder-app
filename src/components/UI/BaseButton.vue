@@ -30,27 +30,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+@import '../../styles/settings.scss';
+
 button,
 a {
 	display: inline-block;
 	padding: 0.75rem 1.5rem;
 	margin-right: 0.5rem;
-	border: 1px solid #35495e;
+	border: 1px solid $brand-two;
 	border-radius: 30px;
 	color: #fff;
 	font: inherit;
 	font-weight: 700;
 	text-decoration: none;
-	background-color: #35495e;
+	background-color: $brand-two;
 	cursor: pointer;
 
 	&:hover,
 	&:active,
 	&:focus {
-		color: #35495e;
-		border-color: #42b883;
-		background-color: #42b883;
-		outline-color: #35495e;
+		color: $brand-two;
+		border-color: $brand-one;
+		background-color: $brand-one;
+		outline-color: $brand-two;
 	}
 
 	&:focus {
@@ -59,14 +62,14 @@ a {
 	}
 
 	&.flat {
-		color: #35495e;
+		color: $brand-two;
 		border: none;
 		background-color: transparent;
 	}
 
 	&.outline {
-		color: #35495e;
-		border-color: #35495e;
+		color: $brand-two;
+		border-color: $brand-two;
 		background-color: transparent;
 	}
 
@@ -74,7 +77,7 @@ a {
 	&.flat:active,
 	&.outline:hover,
 	&.outline:active {
-		background-color: #bed3e9;
+		background-color: $brand-two-light;
 	}
 }
 </style>

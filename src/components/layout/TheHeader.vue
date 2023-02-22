@@ -39,23 +39,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 5rem;
-	background-color: #42b883;
+	min-height: 5rem;
+	background-color: $brand-one;
 
 	nav {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
-		width: 90%;
-		margin: auto;
+		flex-wrap: wrap;
+		margin: 0 auto 19px;
+
+		@media (min-width: $screen-sm) {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			max-width: 40rem;
+			width: 90%;
+			margin: auto;
+		}
 
 		h1 {
-			margin: 0;
+			width: 100%;
+			text-align: center;
+
+			@media (min-width: $screen-sm) {
+				width: auto;
+				margin: 0;
+			}
 
 			a {
 				margin: 0;
@@ -66,7 +82,7 @@ header {
 				&:active,
 				&.router-link-active {
 					text-decoration: underline;
-					color: #35495e;
+					color: $brand-two;
 				}
 			}
 		}
@@ -75,25 +91,43 @@ header {
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
 			padding: 0;
 			margin: 0;
 			list-style: none;
 
+			@media (min-width: $screen-sm) {
+				flex-wrap: nowrap;
+			}
+
 			li {
 				margin: 0 0.5rem;
+				width: 100%;
+				text-align: center;
+
+				@media (min-width: $screen-sm) {
+					width: auto;
+					text-align: center;
+				}
+
+				button {
+					width: 100%;
+				}
 
 				a {
 					display: inline-block;
+					width: 100%;
 					padding: 0.75rem 1.5rem;
 					border: 1px solid transparent;
-					color: #35495e;
+					color: $brand-two;
 					font-weight: 700;
 					text-decoration: none;
+
 
 					&:active,
 					&:hover,
 					&.router-link-active {
-						outline: 2px solid #35495e;
+						outline: 2px solid $brand-two;
 					}
 				}
 			}

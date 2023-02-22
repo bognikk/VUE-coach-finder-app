@@ -14,6 +14,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 .spinner {
 	display: flex;
 	justify-content: center;
@@ -37,7 +39,7 @@
 				width: 7px;
 				height: 7px;
 				border-radius: 50%;
-				background: #42b883;
+				background: $brand-one;
 				margin: -4px 0 0 -4px;
 			}
 
@@ -120,6 +122,7 @@
 	0% {
 		transform: rotate(0deg);
 	}
+
 	100% {
 		transform: rotate(360deg);
 	}

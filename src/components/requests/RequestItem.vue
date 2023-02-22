@@ -21,14 +21,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../styles/settings.scss';
+
 a {
-	color: #35495e;
+	color: $brand-two;
 	text-decoration: none;
 	font-weight: bold;
 
 	&:hover,
 	&:active {
-		color: #42b883;
+		color: $brand-one;
 		text-decoration: underline;
 	}
 }

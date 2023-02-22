@@ -48,6 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../../styles/mixins.scss';
+@import '../../styles/settings.scss';
 
 .form-control {
 	@include form-control;
@@ -55,7 +56,7 @@ export default {
 
 .errors {
 	font-weight: bold;
-	color: #dd0426;
+	color: $alert-red;
 }
 
 .actions {

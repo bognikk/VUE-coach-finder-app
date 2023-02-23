@@ -26,6 +26,7 @@ export default {
 	color: #000;
 	font-weight: 700;
 	background-color: #ccc;
+	box-sizing: border-box;
 
 	@media (min-width: $screen-xs) {
 		width: auto;

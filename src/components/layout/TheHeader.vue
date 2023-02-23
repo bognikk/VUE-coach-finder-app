@@ -101,7 +101,6 @@ header {
 			}
 
 			li {
-				box-sizing: border-box;
 				margin: 0 0.5rem;
 				width: 100%;
 				text-align: center;
@@ -117,6 +116,7 @@ header {
 
 				a {
 					display: inline-block;
+					box-sizing: border-box;
 					width: 100%;
 					padding: 0.75rem 1.5rem;
 					border: 1px solid transparent;
